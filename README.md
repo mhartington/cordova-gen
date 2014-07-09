@@ -3,7 +3,7 @@
 # Install 
 
 ```
-npm install cordova-gen 
+npm install cordova-gen -g
 ```
 
 # Usage
