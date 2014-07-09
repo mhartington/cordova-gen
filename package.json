@@ -1,0 +1,23 @@
+{
+  "name": "cordova-gen",
+  "version": "1.0.0",
+  "description": "cordova gen icon and splash resource",
+  "main": "index.js",
+  "bin":{"cordova-gen":"./bin/cli"},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "cordova",
+    "phonegap",
+    "gen",
+    "icon",
+    "splash"
+  ],
+  "author": "JinweiTang",
+  "license": "MIT",
+  "dependencies": {
+    "xml2js": "^0.4.4",
+    "q": "^1.0.1"
+  }
+}
