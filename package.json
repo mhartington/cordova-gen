@@ -1,6 +1,6 @@
 {
   "name": "cordova-gen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "cordova gen icon and splash resource",
   "main": "index.js",
   "bin":{"cordova-gen":"./bin/cli"},
