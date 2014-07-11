@@ -1,9 +1,10 @@
 {
   "name": "cordova-gen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cordova gen icon and splash resource",
   "main": "index.js",
   "bin":{"cordova-gen":"./bin/cli"},
+  "preferGlobal":true,
   "scripts": {
     "test": "mocha"
   },
