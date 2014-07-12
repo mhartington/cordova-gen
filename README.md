@@ -10,18 +10,15 @@ npm install cordova-gen -g
 
 ```
 $ cd YOUR_PROJECT_FOLER
-$ cp config.xml www/config.xml # in newer cordova config.xml in root dir , copy it to www. NOTE: future versions supurt read config.xml in root dir
-$ cordova-gen www/img/all.png #000 # all.png is a 2048x2048 png file
+$ cp config.xml www/config.xml
+$ cordova-gen www/img/all.png "#000"
 ```
-
-**there are 2 parameters:**
-
-- `www/img/all.png`: a 2048x2048 image , build for all icon and landing 
-- `#000` : landing background color
 
 # Note
 
-1. cordova-gen read `www/config.xml` to get the `name` field `<name>Tidean</name>` , and the name field should be a english word. Cordova will build a fold like `platforms/ios/Tidean/Resources/`
-2. now only surport iOS and android
-3. cordova-gen must be execute in YOUR PROJECT ROOT
+1. cordova-gen read app name from `www/config.xml` . for example , config.xml has  `<name>Tidean</name>` . then `Cordova build ios` will build a folder like `platforms/ios/Tidean/Resources/`
+2. `www/img/all.png` is a 2048x2048 image file , which will converted to many sizes includes icon & land screen
+3. `"#000"` is the background color of generated land screen image files , it should be quoted in double
+4. `cordova-gen` must be executed in YOUR_PROJECT_ROOT
+5. now only suport iOS and android
 
