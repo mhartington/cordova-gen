@@ -1,12 +1,16 @@
 {
   "name": "cordova-gen",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "cordova gen icon and splash resource",
   "main": "index.js",
   "bin":{"cordova-gen":"./bin/cli"},
   "preferGlobal":true,
   "scripts": {
     "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/WeweTom/cordova-gen"
   },
   "keywords": [
     "cordova",
