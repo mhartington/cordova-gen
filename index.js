@@ -89,7 +89,9 @@ function convert(projectName,root,img,bg){
 
 function init(root,img,bg){
   // TODO read config.xml : 1. config.xml 2. www/config.xml
-  readFile("./www/config.xml", "utf-8")
+  // Edit: 8-9-14: Use the project root config
+  // As of 3.5, cordova removed www/config.xml
+  readFile("./config.xml", "utf-8")
   .then(function (xml) {
     parseString(xml, function (err, result) {
       result && result.widget && result.widget.name && result.widget.name[0] && convert(result.widget.name[0],root,img,bg);
